@@ -1,8 +1,8 @@
 # cmake for building and installing ThaiStr
 
 # This sets the package specific versioning
-set(THAISTR_MAJOR_VERSION 1)
-set(THAISTR_MINOR_VERSION 0)
+set(THAISTR_MAJOR_VERSION 0)
+set(THAISTR_MINOR_VERSION 1)
 set(THAISTR_PATCH_VERSION 0)
 
 # This allows easy creation of the directories within /usr/local or another install
@@ -25,11 +25,11 @@ set(THAISTR_CONFIG_VERSION_FILE thaistr-config-version.cmake.in)
 set(THAISTR_CONFIG_HEADER_FILE thaistr-config.h.in)
 
 # The configure_file statements will exchange the variables for the values in this cmake file.
-configure_file(${THAISTR_CONFIG_FILE} sapphire-config.cmake @ONLY)
-configure_file(${THAISTR_CONFIG_VERSION_FILE} sapphire-config-version.cmake @ONLY)
-configure_file(${THAISTR_CONFIG_HEADER_FILE} sapphire-config.h @ONLY)
+configure_file(${THAISTR_CONFIG_FILE} thaistr-config.cmake @ONLY)
+configure_file(${THAISTR_CONFIG_VERSION_FILE} thaistr-config-version.cmake @ONLY)
+configure_file(${THAISTR_CONFIG_HEADER_FILE} thaistr-config.h @ONLY)
 
 # Installs to the output locations so they can be found with find_package()
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/sapphire-config-version.cmake DESTINATION include/${THAISTR_NAMED_VERSION})
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/sapphire-config.cmake DESTINATION lib/${THAISTR_NAMED_VERSION})
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/sapphire-config.h DESTINATION include/${THAISTR_NAMED_VERSION})
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/thaistr-config-version.cmake DESTINATION include/${THAISTR_NAMED_VERSION})
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/thaistr-config.cmake DESTINATION lib/${THAISTR_NAMED_VERSION})
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/thaistr-config.h DESTINATION include/${THAISTR_NAMED_VERSION})

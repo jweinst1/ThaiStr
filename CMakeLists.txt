@@ -12,3 +12,7 @@ else(DEFINED $ENV{THAISTR_HOME})
 endif(DEFINED $ENV{THAISTR_HOME})
 
 
+add_subdirectory(build)
+
+
+enable_testing()

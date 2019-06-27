@@ -1,0 +1,6 @@
+###############################
+# Config File for ThaiStr  #
+###############################
+
+set(thaistr_INCLUDE_DIRS ${CMAKE_INSTALL_PREFIX}/include/@THAISTR_NAMED_VERSION@)
+set(thaistr_LIBRARIES ${CMAKE_INSTALL_PREFIX}/lib/@THAISTR_NAMED_VERSION@/libthaistr.a)
