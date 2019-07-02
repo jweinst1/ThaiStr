@@ -7,6 +7,7 @@ project(thaistr)
 # 'THAISTR_HOME'
 if(DEFINED $ENV{THAISTR_HOME})
     set(CMAKE_INSTALL_PREFIX $ENV{THAISTR_HOME})
+    message("Installing with prefix THAISTR_HOME=$ENV{THAISTR_HOME}")
 else(DEFINED $ENV{THAISTR_HOME})
     set(CMAKE_INSTALL_PREFIX /usr/local)
 endif(DEFINED $ENV{THAISTR_HOME})

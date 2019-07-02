@@ -1,6 +1,10 @@
 #ifndef THAISTR_CONFIG_H
 #define THAISTR_CONFIG_H
 
+/////////////////////////////
+// THAI STR CONFIG HEADER //
+///////////////////////////
+
 #cmakedefine THAISTR_NAMED_VERSION "@THAISTR_NAMED_VERSION@"
 
 #cmakedefine THAISTR_AUTHOR "@THAISTR_AUTHOR@"
