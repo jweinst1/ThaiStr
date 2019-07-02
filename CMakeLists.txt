@@ -17,3 +17,5 @@ add_subdirectory(build)
 
 
 enable_testing()
+
+add_subdirectory(testing)
