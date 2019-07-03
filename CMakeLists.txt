@@ -14,6 +14,7 @@ endif(DEFINED $ENV{THAISTR_HOME})
 
 
 add_subdirectory(build)
+add_subdirectory(scripts)
 
 
 enable_testing()
