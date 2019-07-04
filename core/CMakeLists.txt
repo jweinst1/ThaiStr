@@ -1,0 +1,8 @@
+# Cmake for core directory #
+
+set(THAISTR_CORE_DIR ${PROJECT_SOURCE_DIR}/core)
+set(THAISTR_CORE_DIR ${THAISTR_CORE_DIR} PARENT_SCOPE)
+
+set(THAISTR_CORE_SOURCES
+
+)
